@@ -14,10 +14,10 @@ export class ContactComponent implements OnInit {
   phone:string='';
   message:string='';
   savepost(posts:NgForm){
-    /*if(posts.value.name!==undefined){*/
+    if(posts.value.name!==undefined){
       console.log(posts.value.message);
       this.posts_array.push(posts.value);
-    /*}*/
+    }
     
   }
   constructor() { }
